@@ -1,0 +1,8 @@
+#song-list>h4{
+    /*text-shadow: 2px 2px 5px lightseagreen;*/
+    text-decoration: underline;
+}
+
+.song-item {
+    display: block;
+}

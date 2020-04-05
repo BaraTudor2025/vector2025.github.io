@@ -11,7 +11,7 @@ html{
 
 body{ 
     background-image: url('./../images/y-so-serious-white.png');
-	padding:3rem;
+	padding:2vw;
 }
 
 main{
@@ -23,4 +23,12 @@ main{
     border: 1px;
     box-shadow: 0px 0px 5px 1px grey;
     background: white;
+}
+
+.simple-box {
+    border: 2px solid lightgrey;
+    background: lightgrey;
+    box-shadow: 0px 8px 5px 1px grey;
+    padding: 10px;
+    margin-bottom: 30px;
 }
