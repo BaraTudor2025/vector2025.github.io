@@ -1,6 +1,6 @@
 .galerie {
-  width: 500px;
-  height: 350px;
+  width: 400px;
+  height: 300px;
   border: 1px solid black;
   position: relative;
   overflow: hidden;
@@ -9,8 +9,8 @@
 
 .galerie figure {
   position: absolute;
-  width: 500px;
-  height: 350px;
+  width: 400px;
+  height: 300px;
   left: 0;
   top: 0;
   -webkit-animation-name: galerie_animata_muzica;
