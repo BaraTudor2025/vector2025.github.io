@@ -1,6 +1,11 @@
 #song-list>h4{
     /*text-shadow: 2px 2px 5px lightseagreen;*/
+}
+
+#song-list>li.title{
+    display: block;
     text-decoration: underline;
+    padding-bottom: 20px;
 }
 
 .song-item {

@@ -2,74 +2,74 @@
 <html lang="ro">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="Bara C Tudor">
-    <meta name="keywords" content="music,guitar,notes,compose">
-    <link rel="stylesheet" href="assets/css/general.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/navbar.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/compose.css" type="text/css">
-    <title>Compune-mă</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Bara C Tudor">
+  <meta name="keywords" content="music,guitar,notes,compose">
+  <link rel="stylesheet" href="assets/css/general.css" type="text/css">
+  <link rel="stylesheet" type="text/css" href="assets/css/scss/main-menu.css">
+  <link rel="stylesheet" href="assets/css/compose.css" type="text/css">
+  <title>Compune-mă</title>
 </head>
 
 <body>
 
 
-<header>
+  <header>
     <nav>
-        <ul class="main-menu">
-            <li class="title">Compune-mă</li>
-            <li><a href="index.html">Home</a></li>
-            <li class="sub-main-menu">
-                <a>Profil</a>
-                <ul>
-                    <li><a href="page_songs.html">My songs</a></li>
-                    <li><a href="#">Compose</a></li>
-                </ul>
-            </li>
-            <li><a href="page_login.html">Login</a></li>
-            <li><a href="page_signup.html">Sign Up</a></li>
-        </ul>
+      <ul class="main-menu">
+        <li class="title">Compune-mă</li>
+        <li><a href="index.html">Home</a></li>
+        <li class="sub-main-menu">
+          <a>Profil</a>
+          <ul>
+            <li><a href="page_songs.html">My songs</a></li>
+            <li><a href="#">Compose</a></li>
+          </ul>
+        </li>
+        <li><a href="page_login.html">Login</a></li>
+        <li><a href="page_signup.html">Sign Up</a></li>
+      </ul>
     </nav>
-</header>
+  </header>
 
 
-<main>
+  <main>
 
-    <section id="compose" class="simple-box">
-        <section id="note-list">
-            <p>Notes:</p>
-            <button type="button">A</button>
-            <button type="button">B</button>
-            <button type="button">C</button>
-            <button type="button">D</button>
-            <button type="button">E</button>
-            <button type="button">F</button>
-            <button type="button">G</button>
-        </section>
-        <br/>
+    <div id="compose" class="simple-box">
+      <div id="note-list">
+        <p>Notes:</p>
+        <button type="button">A</button>
+        <button type="button">B</button>
+        <button type="button">C</button>
+        <button type="button">D</button>
+        <button type="button">E</button>
+        <button type="button">F</button>
+        <button type="button">G</button>
+      </div>
+      <br />
 
-        <section id="modifiers">
-            <p>Modifiers:</p>
-            <button type="button">Bemol</button>
-            <button type="button">Sharp</button>
-        </section>
-        <br/>
-    </section>
+      <div id="modifiers">
+        <p>Modifiers:</p>
+        <button type="button">Bemol</button>
+        <button type="button">Sharp</button>
+      </div>
+      <br />
+    </div>
 
-    <section id="note-string" class="simple-box">
-        <h3>The song so far...</h3>
-        <p>C D Eb F G Ab Bb</p>
-        <button type="button">Delete last note</button><br/>
-    </section>
+    <div id="note-string" class="simple-box">
+      <h3>The song so far...</h3>
+      <p>C D Eb F G Ab Bb</p>
+      <button type="button">Delete last note</button><br />
+    </div>
 
-    <section id="options" class="simple-box">
-        <button type="button">Play</button><br/><br/>
-        <label for="song-name">Name</label>
-        <input type="text" id="song-name" name="song-name"><br/>
-        <button type="">Save</button>
-    </section>
-</main>
+    <div id="options" class="simple-box">
+      <button type="button">Play</button><br /><br />
+      <label for="song-name">Name</label>
+      <input type="text" id="song-name" name="song-name"><br />
+      <button type="button">Save</button>
+    </div>
+  </main>
 
 </body>
 

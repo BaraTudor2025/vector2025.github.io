@@ -2,81 +2,86 @@
 <html lang="ro">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="Bara C Tudor">
-    <meta name="keywords" content="music,guitar,notes,compose">
-    <!-- ->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Bara C Tudor">
+  <meta name="keywords" content="music,guitar,notes,compose">
+  <!-- ->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
     <!- -->
-    <link rel="stylesheet" href="assets/css/general.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/navbar.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/note.css" type="text/css">
-    <title>Compune-mă</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/general.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/scss/main-menu.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/song_display.css">
+  <title>Compune-mă</title>
 </head>
 
 <body>
 
-<header>
+  <header>
     <nav>
-        <ul class="main-menu">
-            <li class="title">Compune-mă</li>
-            <li><a href="index.html">Home</a></li>
-            <li class="sub-main-menu">
-                <a>Profil</a>
-                <ul>
-                    <li><a href="#">My songs</a></li>
-                    <li><a href="page_compose.html">Compose</a></li>
-                </ul>
-            </li>
-            <li><a href="page_login.html">Login</a></li>
-            <li><a href="page_signup.html">Sign Up</a></li>
-        </ul>
+      <ul class="main-menu">
+        <li class="title">Compune-mă</li>
+        <li><a href="index.html">Home</a></li>
+        <li class="sub-main-menu">
+          <a>Profil</a>
+          <ul>
+            <li><a href="#">My songs</a></li>
+            <li><a href="page_compose.html">Compose</a></li>
+          </ul>
+        </li>
+        <li><a href="page_login.html">Login</a></li>
+        <li><a href="page_signup.html">Sign Up</a></li>
+      </ul>
     </nav>
-</header>
+  </header>
 
 
-<main id="songs-display">
+  <main id="songs-display">
 
-    <section id="info">
-        <h4>Numar de cantece: 3</h4><br/><br/>
-    </section>
+    <div id="info">
+      <h4>Numar de cantece: 3</h4><br /><br />
+    </div>
 
     <ul id="song-list">
-        <h4>Cantece:</h4> <br/>
+      <li class="title">
+        <div>Cantece:</div>
+      </li>
 
-        <li class="song-item simple-box">
-            <h4 class="song-name">un nume de cantec woooooooooo</h4>
-            <div class="notes-display">
-                <p> a b e f c# g d</p>
-            </div>
-            <button type="button" class="play-button">play</button>
-            <button type="button" class="song-edit">edit</button>
-        </li>
-        <br/>
+      <li class="song-item simple-box">
+        <div class="song-name">un nume de cantec woooooooooo</div>
+        Data publicarii:
+        <time datetime="2020-04-06 15:00">2020-04-06 15:00</time>
+        <div class="notes-display">
+          <p> a b e f c# g d</p>
+        </div>
+        <button type="button" class="play-button">play</button>
+        <button type="button" class="song-edit">edit</button>
+      </li>
 
-        <li class="song-item simple-box">
-            <h4 class="song-name">un nume de cantec woooooooooo</h4>
-            <div class="notes-display">
-                <p> a b e f c# g d</p>
-            </div>
-            <button type="button" class="play-button">play</button>
-            <button type="button" class="song-edit">edit</button>
-        </li>
-        <br/>
+      <li class="song-item simple-box">
+        <div class="song-name">un nume de cantec woooooooooo</div>
+        Data publicarii:
+        <time datetime="2020-04-06 15:00">2020-04-06 15:00</time>
+        <div class="notes-display">
+          <p> a b e f c# g d</p>
+        </div>
+        <button type="button" class="play-button">play</button>
+        <button type="button" class="song-edit">edit</button>
+      </li>
 
-        <li class="song-item simple-box">
-            <h4 class="song-name">un nume de cantec woooooooooo</h4>
-            <div class="notes-display">
-                <p> a b e f c# g d</p>
-            </div>
-            <button type="button" class="play-button">play</button>
-            <button type="button" class="song-edit">edit</button>
-        </li>
-        <br/>
+      <li class="song-item simple-box">
+        <div class="song-name">un nume de cantec woooooooooo</div>
+        Data publicarii:
+        <time datetime="2020-04-06 15:00">2020-04-06 15:00</time>
+        <div class="notes-display">
+          <p> a b e f c# g d</p>
+        </div>
+        <button type="button" class="play-button">play</button>
+        <button type="button" class="song-edit">edit</button>
+      </li>
     </ul>
-</main>
+  </main>
 
 </body>
 
