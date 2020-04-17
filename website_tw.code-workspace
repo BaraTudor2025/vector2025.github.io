@@ -14,6 +14,14 @@
 		"html.format.wrapAttributes": "preserve-aligned",
 		"html.format.wrapLineLength": 0,
 		"editor.wordWrap": "wordWrapColumn",
-		"editor.wordWrapColumn": 120
+		"editor.wordWrapColumn": 120,
+		"liveSassCompile.settings.formats": [
+			{
+				"format": "expanded",
+				"extensionName": ".css",
+				"savePath": "/assets/css/"
+			}
+		],
+		"liveSassCompile.settings.generateMap": false
 	}
 }

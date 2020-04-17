@@ -18,6 +18,7 @@ nav {
 }
 
 $niceButtonColor: lightgoldenrodyellow;
+$main-menu-background: lightblue;
 //$niceButtonColor: lightgreen;
 
 .main-menu {
@@ -30,17 +31,17 @@ $niceButtonColor: lightgoldenrodyellow;
   padding-left: 3vw;
   padding-right: 3vw;
   border-radius: 10px;
-  box-shadow: 0px 0px 5px 1px grey;
-  background: lightblue;
-  
+  //box-shadow: 0px 0px 5px 1px grey;
+  background: $main-menu-background;
+
   &>li{
     display: inline-block;
     margin: 1vw;
   }
-  a {
+  a{
     @include niceButtonFunc();
-    transition: all 0.15s ease-in-out;
-    &:hover{
+    transition: all 0.1s linear;
+    &:hover, &:focus{
       background: $niceButtonColor;
       border-color: black;
     }
@@ -65,7 +66,7 @@ $niceButtonColor: lightgoldenrodyellow;
     }
   }
 
-  &:hover{
+  &:hover, &:focus{
     ul{
       display: flex;
       flex-direction: column;
@@ -73,10 +74,15 @@ $niceButtonColor: lightgoldenrodyellow;
       justify-content: center;
     }
     a{
-      background: $niceButtonColor;
+      //background: $niceButtonColor;
+      background: $main-menu-background;
+      &:hover, &:focus{
+        background: $niceButtonColor;
+      }
     }
   }
 }
+
 
 @media only screen and (min-width: 500px) and (max-width: 800px){
   .main-menu{

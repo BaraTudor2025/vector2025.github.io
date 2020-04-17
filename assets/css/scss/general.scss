@@ -1,61 +1,67 @@
-html {
+html{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
 }
 
-* {
-  margin: 0px;
-  padding: 0px;
-  text-indent: 0px;
+*{
+  margin:0px;
+  padding:0px;
+  text-indent:0px;
 }
 
-body {
-  background-image: url("./../images/y-so-serious-white.png");
-  padding: 3vw;
+body{ 
+  background-image: url('./../images/y-so-serious-white.png');
+  padding:3vw;
 }
 
-main {
-  padding-left: 8%;
-  padding-right: 8%;
-  padding-top: 50px;
+main{
+  padding-left:8%;
+  padding-right:8%;
+  padding-top:50px;
   padding-bottom: 50px;
   margin-top: 50px;
   border: 1px;
-  -webkit-box-shadow: 0px 0px 5px 1px grey;
-          box-shadow: 0px 0px 5px 1px grey;
+  box-shadow: 0px 0px 5px 1px grey;
   border-radius: 10px;
   /*background: #dbd9d1;*/
   background: white;
 }
 
-button {
-  -webkit-transition: all 0.1s linear;
+button{
   transition: all 0.1s linear;
   border: 0px;
   border-radius: 10px;
   padding: 5px;
-  margin-top: 5px;
-  margin-right: 5px;
+  margin: {
+    top: 5px;
+    right: 5px;
+  }
   outline: none;
-  border-style: ridge;
-  border-width: 2px;
-  border-color: transparent;
+  border: {
+    style: ridge;
+    width: 2px;
+    color: transparent;
+  }
+  //border-style: ridge;
+  //border-width: 2px;
+  //border-color: transparent;
   /*
   outline-style: ridge;
   outline-offset: -2px;
   outline-width: 2px;
   outline-color: transparent;
   /**/
+  &:focus{
+    border-radius: 5px;
+    border-color: lightsalmon;
+    //outline-color: lightsalmon;
+    //background-color: ivory;
+    background-color: lightgoldenrodyellow;
+  }
 }
 
-button:focus {
-  border-radius: 5px;
-  border-color: lightsalmon;
-  background-color: lightgoldenrodyellow;
-}
-
-@media screen and (max-width: 1200px) {
-  main {
+@media screen and (max-width: 1200px){
+  main{
     padding-right: 5%;
     padding-left: 5%;
   }
@@ -65,7 +71,7 @@ main h1, main h2, main h3 {
   margin-bottom: 7px;
 }
 
-main > section {
+main>section {
   padding-bottom: 20px;
   border-bottom: 5px solid black;
   margin-bottom: 20px;
@@ -81,11 +87,10 @@ main>section::after {
   border: 5px solid black;
   margin-bottom: 20px;
 }*/
+
 .simple-box {
   display: block;
   background: lightgrey;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   border-radius: 10px;
   padding: 10px;
@@ -94,9 +99,10 @@ main>section::after {
 
 .simple-box-meh {
   border: 2px solid #f5f7fa;
+  //background: #007c89;
+  //background: #def2f1;
   background: #f5f7fa;
-  -webkit-box-shadow: 2px 6px 5px 1px grey;
-          box-shadow: 2px 6px 5px 1px grey;
+  box-shadow: 2px 6px 5px 1px grey;
   padding: 10px;
   margin-bottom: 30px;
 }
